@@ -14,6 +14,8 @@ This is a modified version of the original, uses extra styles etc, all filles in
 
 Example demo at https://satisfying-stocking.surge.sh/
 
+To be ported to Wordpress (or other ) theme.
+
 ## Getting started
 
 You have following options to get UIkit:
