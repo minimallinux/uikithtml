@@ -10,6 +10,10 @@ Join our developer chat. We are online every work day between 8:00 and 18:00 UTC
 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/uikit/uikit)
 
+This is a modified version of the original, uses extra styles etc, all filles include except cdn for font awesome.
+
+Example demo at https://satisfying-stocking.surge.sh/
+
 ## Getting started
 
 You have following options to get UIkit:
