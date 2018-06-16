@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css" id="template_settings">
+	<style>
+		body {
+			border-top: 4px solid #2767A0;
+		}
+		.tm-navbar {
+		    width: 100%;
+		    display: table;
+		    box-shadow: 0 19px 19px -19px rgba(000,000,000, 1);
+		    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		    background: #4682B4;
+		    border-radius: 4px;
+		}
+		.tm-navbar ul {
+		    display: table-row;
+		}
+		.tm-navbar li {
+		    display: table-cell;
+		    float: none;
+		}
+		.tm-navbar li:first-child a{
+			border-radius: 4px 0 0 4px;
+		}
+		.tm-navbar li:last-child a{
+			border-radius: 0 4px 4px 0;
+		}
+		.tm-navbar li a {
+		    display: block;
+		    padding: 20px 13px;
+		    background: #4682B4;
+		    font-size: 14px;
+		    font-weight: normal;
+		    color: #fff;
+		    text-decoration: underline;
+		    text-align: center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+			}
+
+		.tm-navbar li a::before {
+			content: "";
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: #528CBF;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+		}
+
+		.tm-navbar li a:hover:before {
+		    -webkit-transform: scaleX(1);
+  			transform: scaleX(1);
+		}
+
+
+		.tm-navbar li:first-child a:hover:before {
+  			border-radius: 4px 0 0 4px;
+		}
+
+
+		.tm-navbar li:last-child a:hover:before {
+  			border-radius: 0 4px 4px 0;
+		}
+
+
+
+
+
+
+	</style>
+</head>
+<body>
+<!-- 	<nav class="uk-navbar uk-navbar-attached uk-margin-bottom">
+		<div class="uk-container uk-container-center">
+		<a href="" class="uk-navbar-brand">Brand</a>
+		    <ul class="uk-navbar-nav">
+		        <li class="uk-active"><a href=""><i class="uk-icon-home"></i> Lorem</a></li>
+		        <li class="uk-parent" data-uk-dropdown>
+		        	<a href="">Lorem ipsum. <i class="uk-icon-caret-down"></i></a>
+					    <div class="uk-dropdown uk-dropdown-navbar">
+			                <ul class="uk-nav uk-nav-navbar">
+			                    <li><a href="">Lorem</a></li>
+			                    <li><a href="">Lorem</a></li>
+			                    <li><a href="">Lorem</a></li>
+			                    <li><a href="">Lorem</a></li>
+			                </ul>
+			            </div>
+		        </li>
+		        <li><a href="">Lorem ipsum.</a></li>
+		        <li><a href="">Lorem ipsum.</a></li>
+		    </ul>		
+		</div>
+	</nav>
+	<div class="uk-container uk-container-center">
+		<nav class="uk-navbar uk-margin-bottom">
+		<a href="" class="uk-navbar-brand">Brand</a>
+		    <ul class="uk-navbar-nav">
+		        <li class="uk-active"><a href=""><i class="uk-icon-home"></i> Lorem</a></li>
+		        <li class="uk-parent" data-uk-dropdown>
+		        	<a href="">Lorem ipsum. <i class="uk-icon-caret-down"></i></a>
+					    <div class="uk-dropdown uk-dropdown-navbar">
+			                <ul class="uk-nav uk-nav-navbar">
+			                    <li><a href="">Lorem</a></li>
+			                    <li><a href="">Lorem</a></li>
+			                    <li><a href="">Lorem</a></li>
+			                    <li><a href="">Lorem</a></li>
+			                </ul>
+			            </div>
+		        </li>
+		        <li><a href="">Lorem ipsum.</a></li>
+		        <li><a href="">Lorem ipsum.</a></li>
+		    </ul>
+	</nav>
+		<div class="uk-grid">
+			<div class="uk-width-1-4">
+				<div class="uk-panel uk-panel-box uk-panel-header">
+					<h3 class="uk-panel-title uk-text-default">Lorem ipsum.</h3>
+					<ul class="uk-nav uk-nav-side">
+						<li class="uk-active"><a href="">Lorem ipsum.</a></li>
+						<li><a href="">Lorem ipsum.</a></li>
+						<li><a href="">Lorem ipsum.</a></li>
+						<li><a href="">Lorem ipsum.</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="uk-width-3-4">
+				<h1 class="uk-h2">Uikit Multicolor Theme for Developer</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quasi harum, consectetur quae quo quas, dolor blanditiis, atque, ducimus eius quis rem. <a href="">Dolor tenetur dolorum culpa</a> omnis saepe, architecto quod sunt iusto possimus necessitatibus. Quo repudiandae, voluptatum blanditiis, nesciunt neque ratione, soluta similique quae officiis consectetur corporis iste esse alias!</p>
+				<p class="uk-text-primary"><span class="uk-text-bold">Text Primary</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero non odio velit ab. Expedita itaque ratione qui odio recusandae eaque quam, perferendis asperiores. In earum eos totam aspernatur facere minus.</p>
+				<p class="uk-text-success"><span class="uk-text-bold">Text Success</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, aliquid quasi excepturi officia praesentium fugiat tempore nostrum voluptate repellendus, veritatis quas iusto, earum! Non quis temporibus labore quam veritatis, est!</p>
+				<p class="uk-text-warning"><span class="uk-text-bold">Text Warning</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem rerum esse vel officia quam veniam expedita voluptatem maiores corporis soluta autem excepturi suscipit perspiciatis, cupiditate dolorum repudiandae illo pariatur magnam!</p>
+				<p class="uk-text-danger"><span class="uk-text-bold">Text Danger</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur architecto illum dolor quasi maxime aspernatur, adipisci modi! Ab, numquam, commodi, dicta mollitia expedita architecto temporibus blanditiis quidem fugit cum non!</p>
+				<p class="uk-text-muted"><span class="uk-text-bold">Text Muted</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, nesciunt atque neque, illo, quos fugit expedita temporibus sequi quisquam nulla totam a magnam cum iure cumque vel! Minima, saepe aspernatur?</p>
+					<div class="uk-grid">
+						<div class="uk-width-1-4"><a href="" class="uk-button uk-button-large uk-width-1-1 uk-margin-bottom">Default</a></div>
+						<div class="uk-width-1-4"><a href="" class="uk-button uk-button-large uk-width-1-1 uk-margin-bottom uk-button-primary">Primary</a></div>
+						<div class="uk-width-1-4"><a href="" class="uk-button uk-button-large uk-width-1-1 uk-margin-bottom uk-button-success">Success</a></div>
+						<div class="uk-width-1-4"><a href="" class="uk-button uk-button-large uk-width-1-1 uk-margin-bottom uk-button-danger">Danger</a></div>
+
+						<div class="uk-width-1-4"><a href="" class="uk-button uk-width-1-1 uk-margin-bottom">Default</a></div>
+						<div class="uk-width-1-4"><a href="" class="uk-button uk-width-1-1 uk-margin-bottom uk-button-primary">Primary</a></div>
+						<div class="uk-width-1-4"><a href="" class="uk-button uk-width-1-1 uk-margin-bottom uk-button-success">Success</a></div>
+						<div class="uk-width-1-4"><a href="" class="uk-button uk-width-1-1 uk-margin-bottom uk-button-danger">Danger</a></div>
+
+						<div class="uk-width-1-4"><a href="" class="uk-button uk-button-small uk-width-1-1 uk-margin-bottom">Default</a></div>
+						<div class="uk-width-1-4"><a href="" class="uk-button uk-button-small uk-width-1-1 uk-margin-bottom uk-button-primary">Primary</a></div>
+						<div class="uk-width-1-4"><a href="" class="uk-button uk-button-small uk-width-1-1 uk-margin-bottom uk-button-success">Success</a></div>
+						<div class="uk-width-1-4"><a href="" class="uk-button uk-button-small uk-width-1-1 uk-margin-bottom uk-button-danger">Danger</a></div>
+					</div>
+			</div>
+		</div>
+	</div> -->
+	<div class="uk-container uk-container-center">
+	<h1 class="uk-text-default uk-margin-large-top">Lorem ipsum dolor.</h1>
+		<nav class="tm-navbar uk-margin-top">
+			<ul class="">
+				<li><a href="">Каталог</a></li>
+				<li><a href="">Производители</a></li>
+				<li><a href="">Доставка</a></li>
+				<li><a href="">Оплата</a></li>
+				<li><a href="">Партнерам</a></li>
+				<li><a href="">Контакты</a></li>
+			</ul>
+		</nav>
+	</div>
+	<script src="../../vendor/jquery.js"></script>
+	<script src="template_settings.js"></script>
+	<script src="../../docs/js/uikit.min.js"></script>
+</body>
+</html>

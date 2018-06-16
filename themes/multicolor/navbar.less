@@ -1,0 +1,43 @@
+@navbar-background:                             @tm-color-1;
+@navbar-color:                                  @tm-color-2;
+@navbar-link-color:                             @tm-color-2;
+@navbar-link-hover-color:                       @tm-color-2;
+
+@navbar-nav-height:                             46px;
+@navbar-nav-line-height:                        @navbar-nav-height;
+@navbar-nav-padding-horizontal:                 15px;
+@navbar-nav-color:                              @tm-color-2;
+@navbar-nav-font-size:                          14px;
+@navbar-nav-font-weight:                        normal;
+@navbar-nav-font-family:                        "Helvetica Neue", Helvetica, Arial, sans-serif;
+@navbar-nav-hover-background:                   darken(@tm-color-1, 10%);
+@navbar-nav-hover-color:                        @tm-color-2;
+@navbar-nav-onclick-background:                 darken(@tm-color-1, 15%);
+@navbar-nav-onclick-color:                      @tm-color-2;
+@navbar-nav-active-background:                  darken(@tm-color-1, 10%);
+@navbar-nav-active-color:                       @tm-color-2;
+@navbar-nav-subtitle-font-size:                 10px;
+@navbar-nav-subtitle-offset:                    2px;
+
+@navbar-brand-font-size:                        18px;
+@navbar-brand-color:                            @tm-color-2;
+@navbar-brand-hover-color:                      @tm-color-2;
+
+@navbar-toggle-font-size:                       18px;
+@navbar-toggle-color:                           @tm-color-2;
+@navbar-toggle-hover-color:                     @tm-color-2;
+@navbar-toggle-icon:                            "\f0c9";
+@navbar-toggle-icon-alt:                        "\f002";
+
+
+.hook-navbar() {
+	border-radius: 3px;
+    background-image: -webkit-linear-gradient(top, @tm-color-1, darken(@tm-color-1, 15%));
+    background-image: linear-gradient(to bottom, @tm-color-1, darken(@tm-color-1, 15%));
+}
+
+.hook-navbar-misc() {
+	.uk-navbar-attached {
+		border-radius: 0;
+	}
+}
