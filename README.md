@@ -12,7 +12,9 @@ Join our developer chat. We are online every work day between 8:00 and 18:00 UTC
 
 This is a modified version of the original, uses extra styles etc, all files included.
 
-Example demo at
+Example demo at https://satisfying-stocking.surge.sh/
+
+(nav ul menu items can be put on right with class uk-navbar-flip)
 
 To be ported to Wordpress (or other ) theme.
 
